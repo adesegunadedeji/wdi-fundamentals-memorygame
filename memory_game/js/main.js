@@ -5,12 +5,16 @@ console.log("Up and Running!!");
 
 var cards = ["queen", "queen", "king", "king"];
 var cardsInPlay = [];
+var flipCard = function(cardId) {
+
+}
 var cardOne = cards[0];
 cardsInPlay.push(cardOne);
-console.log ("User flipped " + cardsInPlay[0]);
+console.log ("User flipped " + cardOne);
+
 var cardTwo = cards[2];
 cardsInPlay.push(cardTwo);
-console.log ("User flipped " + cardsInPlay[1]);
+console.log ("User flipped " + cardTwo);
 
 if(cardsInPlay.length === 2){
 console.log("The Length Equals two");

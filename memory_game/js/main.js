@@ -28,20 +28,20 @@ var cards = [
 //Array with cards which are in play: 
 var cardsInPlay = [];
 //Function that checks for Match
-var checkForMatch = function(){
-	//THIS IS THE PART IM STRUGGLING WITH 
-	this.setAttribute('src', cards[cardId].cardImage);
-if (cardsInPlay[0] === cardsInPlay[1]){
+var checkForMatch = function(){ 
+	 if (cardsInPlay.length === 2){
+	 	if (cardsInPlay[0] === cardsInPlay[1]){
 	alert("You Found a match"); 
 	}
 	else{
 	alert("Sorry Try Again");
 	}
 }
-
+	}
 
 var flipCard = function () {
 var cardId = this.getAttribute("data-id");
+this.setAttribute('src', cards[cardId].cardImage);
 
 console.log("User flipped " + cards[cardId].rank);
 cardsInPlay.push(cards[cardId].rank);
